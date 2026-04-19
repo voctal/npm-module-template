@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "template",
+    "version": "0.1.0",
+    "description": "A modern module template in TypeScript",
+    "keywords": [
+        "modern",
+        "template",
+        "typescript"
+    ],
+    "homepage": "https://github.com/voctal/npm-module-template",
+    "bugs": {
+        "url": "https://github.com/voctal/npm-module-template/issues"
+    },
+    "license": "MIT",
+    "author": "cbrra (https://github.com/cbrra)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/voctal/npm-module-template.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.cts",
+    "exports": {
+        ".": {
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            },
+            "import": {
+                "types": "./dist/index.d.mts",
+                "default": "./dist/index.mjs"
+            }
+        }
+    },
+    "scripts": {
+        "build": "tsdown",
+        "lint": "oxlint && oxfmt --check",
+        "fmt": "oxfmt"
+    },
+    "devDependencies": {
+        "@types/node": "^25.6.0",
+        "oxfmt": "^0.45.0",
+        "oxlint": "^1.60.0",
+        "oxlint-tsgolint": "^0.21.1",
+        "tsdown": "^0.21.9",
+        "typescript": "^6.0.3"
+    },
+    "engines": {
+        "node": ">=22"
+    }
+}
