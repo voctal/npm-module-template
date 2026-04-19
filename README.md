@@ -20,7 +20,7 @@ This is the template we use for our modules at [Voctal](https://www.npmjs.com/~v
 - Generates source maps (`.map`) and TypeScript declaration files (`d.ts`)
 - Uses the fastest linter: [Oxlint](https://oxc.rs/docs/guide/usage/linter.html)
 - Uses the fastest formatter: [Oxfmt](https://oxc.rs/docs/guide/usage/formatter.html)
-- Uses one of the fastest bundler: [tsdown](https://tsdown.dev/), powered by the [Rolldown](https://rolldown.rs)
+- Uses one of the fastest bundler: [tsdown](https://tsdown.dev/), powered by [Rolldown](https://rolldown.rs)
 - Uses [typescript-go](https://github.com/microsoft/typescript-go) for type checking and type-aware linting
 - Automated publishing with a [GitHub Actions](https://github.com/features/actions) workflow, including [npm provenance](https://github.blog/security/supply-chain-security/introducing-npm-package-provenance)
 
